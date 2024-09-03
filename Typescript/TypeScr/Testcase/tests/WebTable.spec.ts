@@ -16,7 +16,7 @@ expect(await rowWithBradleyLocator.count()).toBeGreaterThan(0);
 // Interact with the checkbox in the filtered row
 await rowWithBradleyLocator.locator('input[type="checkbox"]').check();
 await page.waitForTimeout(3000);
-
+await page.waitForTimeout(3000);
     // List of products to select
     const productsToSelect = ['Bradley', 'John', 'Emily']; // Add names or text content as needed
 
